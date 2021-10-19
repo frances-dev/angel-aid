@@ -1,0 +1,116 @@
+/* Medical Services Section Styles Starts */
+
+.medical-services {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+	.medical-services h2 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.medical-services h2 + h2 {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+	.medical-services ul {
+		margin-bottom: 0;
+	}
+		.medical-services li {
+			margin-top: 30px;
+		}
+			.medical-services li .icon {
+				margin: 0 auto;				
+				width: 130px;
+				height: 130px;
+				line-height: 130px;
+			}
+			.medical-services li h5 {
+				margin-top: 30px;
+				margin-bottom: 15px;
+				font-weight: bold;
+			}
+			.medical-services li p {
+				color: #8d8d8d;
+			}
+			
+/* Main Block #1 Styles Starts */
+
+.main-block1 {
+	margin-top: 80px;
+}
+	.main-block1 h2 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.main-block1 h2 + h2 {
+		margin-top: 10px;
+		margin-bottom: 30px;		
+	}
+	
+/* Main Block #2 Styles Starts */
+
+.main-block2 {
+	color: #8d8d8d;
+}
+	.main-block2 h4 {
+		margin-top: 0;
+		margin-bottom: 20px;
+		color: #191919;
+	}
+	.main-block2 p {
+		margin-bottom: 20px;
+	}
+	
+/* 404 Block Styles Starts */
+
+.block-404 {	
+}	
+	.block-404 h2 {
+		margin-top: 0;
+		margin-bottom: 50px;
+		font-size: 140px;
+		font-weight: bold;
+		color: #323232;
+	}
+	.block-404 h2 span {
+		color: #009bdb;
+	}
+	.block-404 h5 {
+		margin-bottom: 20px;
+		color: #66a3bc;
+		font-weight: bold;
+	}
+	.block-404 p {
+		color: #b8b8b8;
+		font-size: 18px;
+	}
+	.block-404 .btn {
+		margin-top: 50px;
+		padding: 20px 30px;
+		font-size: 18px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.block-404 .btn .fa {
+		font-weight: 500;
+	}
+	.block-404 .btn .fa-home {
+		margin-right: 20px;
+		font-size: 24px;
+	}
+	.block-404 .btn .fa-chevron-right {
+		margin-left: 20px;
+		font-size: 18px;
+	}
+
+    .icon img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
