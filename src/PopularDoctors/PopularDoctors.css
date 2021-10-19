@@ -1,0 +1,15 @@
+.grids{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px 30px;
+  }
+  
+  .main-container{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .my-margin{
+      margin-top: 140px;
+  }

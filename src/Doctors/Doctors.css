@@ -1,0 +1,122 @@
+.grids-container{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.123);
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  .grids-container:last-child{
+    margin-bottom: 30px;
+  }
+  
+  .grids-container:hover{
+    transform:translateY(-1%);
+    cursor: pointer;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.123);
+    transition: 300ms ease;
+    -webkit-transition: 300ms ease;
+    -moz-transition: 300ms ease;
+    -ms-transition: 300ms ease;
+    -o-transition: 300ms ease;
+    -webkit-transform:translateZ(-1%);
+    -moz-transform:translateZ(-1%);
+    -ms-transform:translateZ(-1%);
+    -o-transform:translateZ(-1%);
+  }
+  
+  .card-img-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .card-img-top{
+    padding: 0px;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .card{
+    text-align: start;
+    height: 100%;
+  }
+  
+  .card-body{
+    text-align: start;
+    font-weight: 200 !important;
+    padding: 10px;
+    border-bottom: 1.2px solid rgb(201, 201, 201);
+  }
+
+  .card-body2{
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card-title{
+    color: coral;
+    text-align: center;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .grid-btn{
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 1px solid maroon;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  
+  .grid-btn:hover{
+    background-color: maroon;
+    color: whitesmoke;
+    transition: 300ms ease;
+    -webkit-transition: 300ms ease;
+    -moz-transition: 300ms ease;
+    -ms-transition: 300ms ease;
+    -o-transition: 300ms ease;
+  }
+  
+  .card-text2{
+    font-size: 16px;
+}
+
+
+  .card-category{
+      color: black;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-weight: 400;
+      font-size: 14px;
+      padding: 6px;
+      background-color: gold;
+      padding: 2px 10px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+}

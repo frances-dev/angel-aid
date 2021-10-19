@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Banner from './Banner/Banner';
+import AuthProvider from './context/AuthProvider';
+import Header from './Header/Header';
+import PopularDoctors from './PopularDoctors/PopularDoctors';
+import PopularServices from './PopularServices/PopularServices';
+import SignUp from './SignUp/SignUp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route path='/home'>
+              <Banner></Banner>
+              <PopularDoctors></PopularDoctors>
+            </Route>
+
+            <Route path='/sign-up'>
+              <SignUp></SignUp>
+            </Route>
+
+          </Switch>
+        </Router>
+
+
+      </AuthProvider>
+
     </div>
   );
 }
