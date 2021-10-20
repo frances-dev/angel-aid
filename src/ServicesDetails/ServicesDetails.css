@@ -1,4 +1,4 @@
-.grids-container{
+.my-grids-container{
     display: flex;
     flex-direction: column;
     grid-gap: 10px;
@@ -12,7 +12,6 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
   }
-
   
   .grids-container:hover{
     transform:translateY(-1%);
@@ -47,8 +46,27 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
+.card-img-top2{
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid slateblue;
+  object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
   
-  .my-card{
+  .card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    align-items: center;
     text-align: start;
     height: 100%;
   }

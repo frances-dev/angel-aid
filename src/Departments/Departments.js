@@ -6,7 +6,7 @@ const Departments = () => {
         <div>
             <section className="medical-services">
                 <h2 className="main-heading1 lite mt-5 text-danger">Our Best</h2>
-                <h2 className="main-heading2 text-primary">Medical Services</h2>
+                <h2 className="main-heading2 text-primary">Medical Departments</h2>
 
                 {/* Medical Services List Starts */}
                 <ul className="list-unstyled row text-center">

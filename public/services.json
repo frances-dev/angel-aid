@@ -3,6 +3,8 @@
     "id": "0001",
     "name": "Dr. George A. Beller",
     "category": "Service: Dental",
+    "department": "Department: Dental Care",
+    "departmentImg": "https://www.508dentist.com/wp-content/uploads/Dentist-and-Patient-Consultation.jpg",
     "details": "Dr. George A. Belle is successful dentist and is performing dental care more than a decade. A bunch of people are highly benefitted by him. Feel free to make an appointment.",
     "img": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
   }, 
@@ -11,6 +13,8 @@
     "id": "0002",
     "name": "Dr. Mary Lee Vance",
     "category": "Service: Consulting",
+    "department": "Department: Personal Consultancy",
+    "departmentImg": "https://www.ghp-news.com/pages/46224018-dadc-4fe5-b21a-91d5c60e419c/e5ccf5a7-f257-44a3-bfc5-0c6dcb6e8eec/img_2_3b00685d-4682-4cbc-a522-a343b00994a9.png",
     "details": "Dr. Mary Lee Vance is an outstanding character who has the ability to solve every patient's problem with great care and super ease. Patients really like her care and attitude.",
     "img": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
   },
@@ -18,7 +22,9 @@
   {
     "id": "0003",
     "name": "Dr. Robert J. Boyle",
-    "category": "Service: Paramedicin",
+    "category": "Service: Paramedicine",
+    "department": "Department: Consultancy on Medicine",
+    "departmentImg": "https://2.bp.blogspot.com/-i1rB5VnAeLY/V63WecgBLzI/AAAAAAAAJU4/V-N0on76-d8wEKz5B_guN_0DBBfMrYmTgCLcB/w640/Medicine%2BSpecialist.jpg",
     "details": "Dr. Robert J. Boyle has enough knowledge about his field which gives him the power to choice the best medicine for his patients and results in quick recovery. He is Hilarious.",
     "img": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"
   },
@@ -26,8 +32,10 @@
   {
     "id": "0004",
     "name": "Dr. Mary E. Jensen",
-    "category": "Service: Psychology",
-    "details": "Dr. Mary E. Jensen is best utof here. Excellent psychologist with utmost intelligence and experience. She can easily sort out the problems of the any patient who consulted her and make his position much higher here.",
+    "category": "Service: Psychological Advices",
+    "department": "Department: Psychology",
+    "departmentImg": "https://cdn.shopify.com/s/files/1/2723/8452/products/Psychological_Disorders_1024x1024@2x.jpg?v=1517013129",
+    "details": "Dr. Mary E. Jensen is best of here. Excellent psychologist with utmost intelligence and experience. She can easily sort out the problems of the any patient who consulted her and make his position much higher here.",
     "img": "https://images.unsplash.com/photo-1536064479547-7ee40b74b807?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
   },
 
@@ -35,6 +43,8 @@
     "id": "0005",
     "name": "Dr. Bradley W. Kesser",
     "category": "Service: Surgical",
+    "department": "Department: Surgery",
+    "departmentImg": "https://www.irishnews.com/picturesarchive/irishnews/irishnews/2021/01/20/211914376-81685769-86be-47ff-8fd5-bd71b64d018a.jpg",
     "details": "Dr. Bradley W. Kesser is a famous surgeon. He is an outstanding surgeon & physician who performs surgery. There are also surgeons in podiatry, dentistry, orthodontics, and veterinary medicine.",
     "img": "https://images.unsplash.com/photo-1551601651-05a4836d25c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1507&q=80"
   },
@@ -43,7 +53,9 @@
     "id": "0006",
     "name": "Dr. James M. Larner",
     "category": "Service: Neurological",
-    "details": "Dr. James M. Larner has obtained his medical degree from a famous medical college. He is a surgeon is a physician who is trained to perform surgical procedures.",
+    "department": "Department: Neuro-surgery",
+    "departmentImg": "https://news.vcu.edu/image/a01d8c56-31ab-4e8d-8832-29f4c62feea8",
+    "details": "Dr. James M. Larner has obtained his medical degree from a famous medical college. He is a surgeon is a physician who is trained to perform surgical procedures. His expertise is beyond imagination which has benefitted thousand of patients so far.",
     "img": "https://images.unsplash.com/photo-1550831107-1553da8c8464?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80"
   }
 ]

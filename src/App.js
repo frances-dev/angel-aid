@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import About from './About/About';
 import './App.css';
 import Appointment from './Appointment/Appointment';
 import Banner from './Banner/Banner';
@@ -7,6 +8,7 @@ import Departments from './Departments/Departments';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import PopularDoctors from './PopularDoctors/PopularDoctors';
+import Services from './Services/Services';
 import SignUp from './SignUp/SignUp';
 
 function App() {
@@ -23,6 +25,10 @@ function App() {
               <Appointment></Appointment>
             </Route>
 
+            <Route path='/services'>
+              <Services></Services>
+            </Route>
+
             <Route path='/sign-up'>
               <SignUp></SignUp>
             </Route>
@@ -32,7 +38,7 @@ function App() {
         </Router>
       </AuthProvider>
 
-    </div>
+    </div >
   );
 }
 

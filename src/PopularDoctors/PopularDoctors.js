@@ -14,10 +14,10 @@ const PopularDoctors = () => {
 
     return (
         <div>
-            <div className='my-margin'>
+            <div className='my-margin2'>
                 <h2 className="my-4 p-heading fw-bold">Meet our Doctors & Their Services</h2>
                 <div className="main-container">
-                    <div className='grids'>
+                    <div className='my-grids'>
                         {
                             services.map(service =>
                                 <Doctors id={service.id} service={service} ></Doctors>)

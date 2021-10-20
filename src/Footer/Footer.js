@@ -17,17 +17,13 @@ const Footer = () => {
                                 </p>
                                 <ul class="list-unstyled address-list">
                                     <li class="clearfix address">
-                                        <i class="fa fa-home"></i> Shilparamam Lonsdale St. Marks Road, Talay Victoria 8011 London.
+                                        Shilparamam Lonsdale St. Marks Road, Talay Victoria 8011 London.
                                     </li>
                                     <li class="clearfix">
-                                        <i class="fa fa-fax"></i> 001 - 785 987 1234
+                                        001 - 785 987 1234
                                     </li>
                                     <li class="clearfix">
-                                        <i class="fa fa-phone"></i> 001 - 123 478 5987
-                                    </li>
-                                    <li class="clearfix">
-                                        <i class="fa fa-envelope"></i>
-                                        <a href="mailto:info@yourhospitalsite.com">info@yourhospitalsite.com</a>
+                                        <a href="shahriarfrances@gmail.com">info.angel@aid.com</a>
                                     </li>
                                 </ul>
                             </div>
@@ -39,7 +35,6 @@ const Footer = () => {
                                     <li><a href="#"> Pediatric Clinic</a></li>
                                     <li><a href="#"> Diagnosis Clinic</a></li>
                                     <li><a href="#"> Cardiac Clinic</a></li>
-                                    <li><a href="#"> Laboratory Analysis</a></li>
                                     <li><a href="#"> Dental Clinic</a></li>
                                     <li><a href="#"> Gynecological Clinic</a></li>
                                     <li><a href="#"> Psychological</a></li>
@@ -51,20 +46,16 @@ const Footer = () => {
                                 <h4 className='text-center'>Twitter</h4>
                                 <ul class="list-unstyled tweets-list">
                                     <li>
-                                        Our Hospitals Website Launched.
+                                        Angel Aid's Website Launched.
                                         <a href="#">http://t.co/xyz12abc</a>
                                     </li>
                                     <li>
-                                        Our Hospitals Twitter Page, please follow.
+                                        Angel Aid's Twitter Page, please follow.
                                         <a href="#">http://t.co/testlink</a>
                                     </li>
                                     <li>
-                                        Our Hospitals Facebook Page, please like.
+                                        Angel Aid's Facebook Page, please like.
                                         <a href="#">http://t.co/abc123link</a>
-                                    </li>
-                                    <li>
-                                        Our Hospitals Broucher Launched.
-                                        <a href="#">http://t.co/xyz-test1</a>
                                     </li>
                                 </ul>
                             </div>
@@ -92,7 +83,7 @@ const Footer = () => {
                 <div class="copyright">
                     <div class="container clearfix">
                         <p class="pull-left">
-                            &copy; Copyright 2015. AlL Rights Reserved By <span>Hosptials</span>
+                            &copy; Copyright 2021. AlL Rights Reserved By <span>Angel Aid</span>
                         </p>
                         <ul class="list-unstyled list-inline pull-right">
                             <li><a href="#">Terms Of Services</a></li>
