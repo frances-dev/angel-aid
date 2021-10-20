@@ -16,35 +16,11 @@ const useFirebase = () => {
     const githubProvider = new GithubAuthProvider();
 
     const signInWithGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                const { displayName, email, photoURL } = result.user;
-                const loggedInUser = {
-                    name: displayName,
-                    email: email,
-                    photo: photoURL
-                };
-                setUser(loggedInUser);
-            })
-            .catch(error => {
-                setError(error.message)
-            })
+        return signInWithPopup(auth, googleProvider)
     }
 
     const signInWithGithub = () => {
-        signInWithPopup(auth, githubProvider)
-            .then(result => {
-                const { displayName, email, photoURL } = result.user;
-                const loggedInUser = {
-                    name: displayName,
-                    email: email,
-                    photo: photoURL
-                };
-                setUser(loggedInUser);
-            })
-            .catch(error => {
-                setError(error.message)
-            })
+        return signInWithPopup(auth, githubProvider)
     }
 
     const handleRegistration = e => {
@@ -163,6 +139,8 @@ const useFirebase = () => {
         user,
         error,
         isLogin,
+        setUser,
+        setError,
         handleRegistration,
         logOut,
         handleNameChange,

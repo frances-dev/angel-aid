@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router';
-import useAuth from '../../Hooks/useAuth';
+import useAuth from '../Hooks/useAuth';
 
 const PrivateRoute = ({ children, ...rest }) => {
     const { user } = useAuth();
@@ -11,10 +11,10 @@ const PrivateRoute = ({ children, ...rest }) => {
                 <Redirect to={{
                     pathname: '/sign-up',
                     state: { from: location }
-                }}>
-                </Redirect>}
-        >
-        </Route>
+                }}
+                ></Redirect>
+            }
+        ></Route>
     );
 };
 

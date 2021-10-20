@@ -10,6 +10,7 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import NotFound from './NotFound/NotFound';
 import PopularDoctors from './PopularDoctors/PopularDoctors';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Services from './Services/Services';
 import SignUp from './SignUp/SignUp';
 
@@ -21,7 +22,7 @@ function App() {
           <Header></Header>
           <Switch>
 
-            <Route path='/'>
+            <Route exact path='/'>
               <Banner></Banner>
               <PopularDoctors></PopularDoctors>
               <Departments></Departments>
@@ -35,17 +36,17 @@ function App() {
               <Appointment></Appointment>
             </Route>
 
-            <Route path='/services'>
+            <PrivateRoute path='/services'>
               <Services></Services>
-            </Route>
+            </PrivateRoute>
 
-            <Route path='/about'>
+            <PrivateRoute path='/about'>
               <About></About>
-            </Route>
+            </PrivateRoute>
 
-            <Route path='/book-an-appointment'>
+            <PrivateRoute path='/book-an-appointment'>
               <BookAppointment></BookAppointment>
-            </Route>
+            </PrivateRoute>
 
             <Route path='/sign-up'>
               <SignUp></SignUp>

@@ -1,13 +1,77 @@
 import React from 'react';
 import './SignUp.css'
 import useAuth from '../Hooks/useAuth';
+import { useHistory, useLocation } from 'react-router';
 
 const SignUp = () => {
-    const { user, error, isLogin, handleRegistration, handleNameChange, handleEmailChange, handlePasswordChange, toggleLogin, handlePasswordReset, signInWithGoogle, signInWithGithub, logOut } = useAuth();
+    // Connecting useAuth
+    const { user, setUser, error, setError, isLogin, handleRegistration, handleNameChange, handleEmailChange, handlePasswordChange, toggleLogin, handlePasswordReset, signInWithGoogle, signInWithGithub, logOut } = useAuth();
+
+    // Redirecting to previous location
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_url = location.state?.from || '/home';
+
+    // Sorting Location redirect for Google
+    const handleGoogleLogIn = () => {
+        signInWithGoogle()
+            .then(result => {
+                const { displayName, email, photoURL } = result.user;
+                const loggedInUser = {
+                    name: displayName,
+                    email: email,
+                    photo: photoURL
+                };
+                setUser(loggedInUser);
+                history.push(redirect_url);
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+
+    // Sorting Location redirect for Github
+    const handleGithubLogIn = () => {
+        signInWithGithub()
+            .then(result => {
+                const { displayName, email, photoURL } = result.user;
+                const loggedInUser = {
+                    name: displayName,
+                    email: email,
+                    photo: photoURL
+                };
+                setUser(loggedInUser);
+                history.push(redirect_url);
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+
+    // Sorting Location redirect for Email & Password Login (Couldn't Solve)
+    // const handleEmailLogIn = () => {
+    //     handleRegistration()
+    //         .then(result => {
+    //             const { displayName, email, photoURL } = result.user;
+    //             const loggedInUser = {
+    //                 name: displayName,
+    //                 email: email,
+    //                 photo: photoURL
+    //             };
+    //             setUser(loggedInUser);
+    //             history.push(redirect_url);
+    //             console.log(user);
+    //             setError('');
+    //         })
+    //         .catch(error => {
+    //             setError(error.message);
+    //         });
+    // }
+
     return (
         <div>
             <div>
-                <form onSubmit={handleRegistration} className="w-50  mx-auto text-start pt-5 mt-5">
+                <form onSubmit={handleRegistration} className="w-25  mx-auto text-start pt-5 mt-5">
                     <h2 className="text-center text-danger mb-3"> Please {isLogin ? 'Log In' : 'Register'} Here</h2>
                     {!isLogin && <div class="col">
                         <label htmlFor="exampleInputEmail1" className="form-label">Your Name</label>
@@ -34,9 +98,9 @@ const SignUp = () => {
             {
                 !user.name ?
                     <div>
-                        <h2>or</h2> <hr className="w-50 mx-auto mb-4" />
-                        <button className="btn-warning me-3 ps-3 pe-3 pt-2 pb-2 border-0 rounded-2" onClick={signInWithGoogle}> Sign in With Google</button>
-                        <button className="btn-dark me-3 ps-3 pe-3 pt-2 pb-2 border-0 rounded-2" onClick={signInWithGithub}> Sign in With Github</button>
+                        <h2>or</h2> <hr className="w-25 mx-auto mb-4" />
+                        <button className="btn-warning me-3 ps-3 pe-3 pt-2 pb-2 border-0 rounded-2" onClick={handleGoogleLogIn}> Sign in With Google</button>
+                        <button className="btn-dark me-3 ps-3 pe-3 pt-2 pb-2 border-0 rounded-2" onClick={handleGithubLogIn}> Sign in With Github</button>
                     </div> :
                     <button className="btn-warning me-3 ps-3 pe-3 pt-2 pb-2 border-0 rounded-2" onClick={logOut}>Sign Out</button>
             }
