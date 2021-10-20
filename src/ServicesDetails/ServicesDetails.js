@@ -17,7 +17,7 @@ const ServicesDetails = (props) => {
                 <div className="card-body3">
                     <h6 className="card-text2">{details}</h6>
                 </div>
-                <div>
+                <div className='d-flex justify-content-center'>
                     <img src={departmentImg} class="card-img-top2" alt="..." />
                 </div>
             </div>

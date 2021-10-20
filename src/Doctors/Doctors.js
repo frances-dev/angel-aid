@@ -16,7 +16,7 @@ const Doctors = (props) => {
                     <h6 className="card-text2">{details}</h6>
                 </div>
                 <div className="card-body2">
-                    <Link to="/services" className='btn btn-danger'>Make an Appointment</Link>
+                    <Link to="/services" className='btn btn-danger my-btn'>Make an Appointment</Link>
                 </div>
             </div>
         </div>

@@ -3,10 +3,10 @@ import './Appointment.css'
 
 const Appointment = () => {
     return (
-        <div className='book-appointment-box my'>
-            <h4>Online Hassle Free Appointment Booking</h4>
-            <h3> +1 874 801 8014</h3>
-            <a href="doctor-profile.html" className="btn btn-warning my-btn">Book your Appointment</a>
+        <div className='book-appointment-box'>
+            <h4 className='my-heading1'>Online Hassle Free Appointment Booking</h4>
+            <h3 className='my-heading2'> +1 874 801 8014</h3>
+            <a href="/book-an-appointment" className="btn btn-warning my-btn">Book your Appointment</a>
         </div>
     );
 };

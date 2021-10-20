@@ -1,4 +1,13 @@
-/* Medical Services Section Styles Starts */
+/* Departments */
+.main-heading1{
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.main-heading2{
+	margin-top: 0px !important;
+	font-size: 22px;
+}
 
 .medical-services {
 	width: 90%;
@@ -113,4 +122,21 @@
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+	}
+
+    .icon img:hover{
+		border: 7px solid cornflowerblue;
+		transition: 350ms ease;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+		-webkit-transition: 350ms ease;
+		-moz-transition: 350ms ease;
+		-ms-transition: 350ms ease;
+		-o-transition: 350ms ease;
 }

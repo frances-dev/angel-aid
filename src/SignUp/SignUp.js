@@ -1,4 +1,5 @@
 import React from 'react';
+import './SignUp.css'
 import useAuth from '../Hooks/useAuth';
 
 const SignUp = () => {
@@ -20,9 +21,9 @@ const SignUp = () => {
                         <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                         <input onChange={handlePasswordChange} type="password" className="form-control" id="exampleInputPassword1" placeholder="password" required />
                     </div>
-                    <div className="mb-3 form-check">
-                        <input onChange={toggleLogin} type="checkbox" className="form-check-input" id="exampleCheck1" />
-                        <label className="form-check-label" htmlFor="exampleCheck1">Already Registered?</label>
+                    <div class="mb-3 form-check">
+                        <input onClick={toggleLogin} type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <label class="form-check-label my-label" for="exampleCheck1">Already Registered?</label>
                     </div>
                     <button type="submit" className="btn btn-primary">{isLogin ? 'Log In' : 'Register'}</button>
                     <button onClick={handlePasswordReset} type="button" className="btn btn-danger ms-3"> Reset Password</button>

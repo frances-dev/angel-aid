@@ -22,9 +22,8 @@ const Header = () => {
                         <Nav className="m-auto">
                             <Link to="/home" className="my-hover text-white text-decoration-none">Home</Link>
                             <Link to="/services" className="my-hover text-white text-decoration-none">Services</Link>
-                            <Link to="/doctors" className="my-hover text-white text-decoration-none">Doctors</Link>
-                            <Link to="/about-us" className="my-hover text-white text-decoration-none">About Us</Link>
-                            <Link to="/contact-us" className="my-hover text-white text-decoration-none">Contact Us</Link>
+                            <Link to="/about" className="my-hover text-white text-decoration-none">About Us</Link>
+                            <Link to="/book-an-appointment" className="my-hover text-white text-decoration-none">Book an Appointment</Link>
                         </Nav>
                         <Nav>
                             {
