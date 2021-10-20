@@ -24,4 +24,21 @@
   .p-heading{
     color: rgb(187, 9, 9);
   }
+
   
+
+  @media only screen and (max-width: 688px) {
+    .my-nav{
+      margin: 0 auto;
+      display: flex !important;
+      justify-content: center !important;
+      text-align: center !important;
+    }
+
+    .nav-div{
+      margin: 0 auto !important;
+      display: flex !important;
+      justify-content: center 
+    }
+
+  }
