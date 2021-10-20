@@ -75,6 +75,91 @@
     height: 100%;
   }
   
+  @media only screen and (max-width: 688px) {
+    .card{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      align-items: center;
+      text-align: start;
+      height: 100%;
+    }
+
+    .card-img-top2{
+      position: absolute;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0px;
+      width: 80px;
+      height: 80px;
+      top: 30%;
+      left: 75%;
+      border-radius: 50%;
+      border: 2px solid slateblue;
+      object-fit: cover;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+
+    .grids-container:hover .card-img-top2{
+      position: absolute;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0px;
+      width: 80px;
+      height: 80px;
+      top: 30%;
+      left: 75%;
+      border-radius: 50%;
+      border: 2px solid slateblue;
+      object-fit: cover;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .card-img-top2{
+      position: absolute;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0px;
+      width: 80px;
+      height: 80px;
+      top: 28%;
+      left: 70%;
+      border-radius: 50%;
+      border: 2px solid slateblue;
+      object-fit: cover;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+
+    .grids-container:hover .card-img-top2{
+      position: absolute;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0px;
+      width: 80px;
+      height: 80px;
+      top: 120px;
+      left: 230px;
+      border-radius: 50%;
+      border: 2px solid slateblue;
+      object-fit: cover;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+
   .card-body{
     text-align: start;
     font-weight: 200 !important;

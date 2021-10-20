@@ -71,7 +71,7 @@ const SignUp = () => {
     return (
         <div>
             <div>
-                <form onSubmit={handleRegistration} className="w-25  mx-auto text-start pt-5 mt-5">
+                <form onSubmit={handleRegistration} className="my-login  mx-auto text-start pt-5 mt-5">
                     <h2 className="text-center text-danger mb-3"> Please {isLogin ? 'Log In' : 'Register'} Here</h2>
                     {!isLogin && <div class="col">
                         <label htmlFor="exampleInputEmail1" className="form-label">Your Name</label>
@@ -98,8 +98,8 @@ const SignUp = () => {
             {
                 !user.name ?
                     <div>
-                        <h2>or</h2> <hr className="w-25 mx-auto mb-4" />
-                        <button className="btn-warning me-3 ps-3 pe-3 pt-2 pb-2 border-0 rounded-2" onClick={handleGoogleLogIn}> Sign in With Google</button>
+                        <h2>or</h2> <hr className="my-login mx-auto mb-4" />
+                        <button className="btn-warning me-3 mb-3 ps-3 pe-3 pt-2 pb-2 border-0 rounded-2" onClick={handleGoogleLogIn}> Sign in With Google</button>
                         <button className="btn-dark me-3 ps-3 pe-3 pt-2 pb-2 border-0 rounded-2" onClick={handleGithubLogIn}> Sign in With Github</button>
                     </div> :
                     <button className="btn-warning me-3 ps-3 pe-3 pt-2 pb-2 border-0 rounded-2" onClick={logOut}>Sign Out</button>
