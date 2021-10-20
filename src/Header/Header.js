@@ -16,7 +16,7 @@ const Header = () => {
             {/* Navbar Section */}
             <Navbar collapseOnSelect expand="lg" bg="danger" variant="dark">
                 <Container>
-                    <Navbar.Brand href="/home">Angel-Aid</Navbar.Brand>
+                    <Navbar.Brand href="https://angle-aid.web.app/">Angel-Aid</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="m-auto">
